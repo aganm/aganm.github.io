@@ -37,9 +37,7 @@ different kind of way. And when I use the first type, I expect something
 from the future types, but then I get surprised that it is not the case.
 And I stop to think twice over it. It adds unnecessary friction.
 
-What I propose is a design for basic type names that is intuitive and doesn't
-make you stop twice or even thrice about it. The usual mathy type names might
-look something along the lines of:
+The usual mathy type names might look something along the lines of:
 
 ~~~
 float       // A float
@@ -76,7 +74,8 @@ about. The following solution will fix these incongruities once and for all.
 
 # The Solution
 
-Here is the design I use:
+What I propose is a design for basic type names that is intuitive and doesn't
+make you stop twice or even thrice about it. Here is the design I use:
 
 First step, do I want a floating point number, a signed integer, or an unsigned integer?
 
