@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Door Oriented Programming
-subtitle: or: What Doors Can Teach Us About Software
+subtitle: What Doors Can Teach Us About Software
 gh-repo: aganm/aganm.github.io
 gh-badge: [star, fork, follow]
 tags: [test]
