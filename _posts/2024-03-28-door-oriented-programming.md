@@ -9,8 +9,6 @@ comments: true
 author: Michael Aganier
 ---
 
-# Doors
-
 Let me ask you this: is there such a thing as objectively right or wrong design?
 I remember watching a video about the design of doors. I love doors. The video
 was about different kinds of designs of doors and how they affect people's
