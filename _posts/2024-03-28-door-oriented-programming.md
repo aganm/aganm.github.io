@@ -2,7 +2,7 @@
 layout: post
 title: Door Oriented Programming
 subtitle: "or: What Can Doors Teach Us About Software"
-cover-img:
+cover-img: https://99percentinvisible.org/app/uploads/2016/02/pulldoors.jpg
 thumbnail-img: https://99percentinvisible.org/app/uploads/2016/02/pulldoors.jpg
 share-img: https://99percentinvisible.org/app/uploads/2016/02/pulldoors.jpg
 gh-repo: aganm/aganm.github.io
