@@ -25,7 +25,8 @@ people will try to use the door wrong all the time. People see a handle, they
 expect it's there to be pulled, then they pull on it, realise they used it
 wrong, and push.
 
-[![It's not you. Bad doors are everywhere.](https://99percentinvisible.org/app/uploads/2016/02/pulldoors.jpg)](https://youtu.be/yY96hTb8WgI "It's not you. Bad doors are everywhere.")
+[![It's not you. Bad doors are everywhere.](https://99percentinvisible.org/app/uploads/2016/02/pulldoors.jpg)]
+(https://youtu.be/yY96hTb8WgI "It's not you. Bad doors are everywhere.")
 
 # The Problem
 
