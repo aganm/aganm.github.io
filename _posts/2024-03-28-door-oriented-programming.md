@@ -47,22 +47,13 @@ And you stop to think twice over it.
 # The Problem
 
 What I propose is a design for basic type names that is intuitive and doesn't
-make you stop twice or even thrice about it.
-
-The usual mathy type names might look something along the lines of:
+make you stop twice or even thrice about it. The usual mathy type names might
+look something along the lines of:
 
 ~~~
 float       // A float
 Vector3     // A vector of 3 floats
 Rect4       // A rectangle of 4 floats
-~~~
-
-For integers:
-
-~~~
-int         // An integer
-Vector3i    // A vector of 4 integers
-Rect4i      // A rectangle of 4 integers
 ~~~
 
 For commonly used types, it may seem not so bad, but it gets worse as we introduce
@@ -74,7 +65,7 @@ Vector3d
 Rect4d
 ~~~
 
-What if I want integers, but 64-bits long? Maybe I'll use an explicit-size primitive,
+What if I want integers, but 64-bits long? Maybe I'll use an explicit size primitive,
 and that will reflect on other names as well:
 
 ~~~
@@ -84,13 +75,13 @@ Rect4i64
 ~~~
 
 There is no way to intuitively reason about how these names should be combined
-because they are almost arbitrary named. Some are of implicit size that we assume
-(`float`), some are explicit sized (`i64`), some omit the primitive type  (`Vector3`),
-some specify the primitive type and the size (`Vector3i64`).
+from the top of your head because they are arbitrarily named. Some are of
+implicit size that we assume (`float`), some are explicit size (`i64`), some
+omit the primitive type  (`Vector3`), some specify the primitive type and the
+size (`Vector3i64`).
 
-Such a naming style is all over the place and impossible to predict, impossible
-to think intuitively about. The following solution will fix these
-incongruities once and for all.
+Such a naming style is all over the place and impossible to think intuitively
+about. The following solution will fix these incongruities once and for all.
 
 # The Solution
 
@@ -117,7 +108,7 @@ i64   // signed 64-bit integer
 u128  // unsigned 128-bit integer
 ~~~
 
-Fun fact: Zig will let you choose specific bit sizes for your types, like `u29`.
+    Fun fact: Zig will let you choose specific bit sizes for your types, like `u29`.
 
 From here, you can choose to end it, and you have a primitive.
 Or, if you continue, you can make complex math types.
