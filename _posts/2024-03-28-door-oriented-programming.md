@@ -99,7 +99,7 @@ the overall design is consistent within itself.
 Second step, what size do I want this primitive to be? Depending if the language
 supports it, this value could be almost anything starting from 8 in powers of 2.
 
-~~~
+~~~c
 f32   // 32-bit floating point
 i64   // signed 64-bit integer
 u128  // unsigned 128-bit integer
