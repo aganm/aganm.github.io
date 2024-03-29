@@ -27,17 +27,16 @@ wrong, and push.
 
 [![It's not you. Bad doors are everywhere.](https://99percentinvisible.org/app/uploads/2016/02/pulldoors.jpg)](https://youtu.be/yY96hTb8WgI "It's not you. Bad doors are everywhere.")
 
-# Type Names
+# The Problem
 
 When a door is designed right, you don't even think about it, you just use it
 because the design was intuitive and it didn't need you to stop to think twice
 over opening this door. Now when it comes to type names in programming, I see
 this a lot: one type is named in a certain way, and then another type in a
-different kind of way. And when you use the first type, you expect something
-from the future types, but then you get surprised that it is not the case.
-And you stop to think twice over it.
-
-# The Problem
+different kind of way. And when I use the first type, I expect something
+from the future types, but then I get surprised that it is not the case.
+And I stop to think twice over it. It adds unnecessary friction to my
+programming flow.
 
 What I propose is a design for basic type names that is intuitive and doesn't
 make you stop twice or even thrice about it. The usual mathy type names might
