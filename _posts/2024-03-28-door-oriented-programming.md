@@ -238,7 +238,5 @@ there's no handle.
 > You'll get your rent when you fix this damn door!
 > 
 >
----
-
 
 See? Even Spider-Man agrees with me.
