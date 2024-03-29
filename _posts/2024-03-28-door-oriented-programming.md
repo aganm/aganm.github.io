@@ -18,9 +18,9 @@ expectations. When you see a handle, you expect that you're expected to pull
 on that handle.  When you see no handle, you expect that you're expected to
 push on it. And the world keeps turning. But not every door is designed like
 that.  What happens when it's the opposite? Sometimes they just wanted to try
-something new and exiting, other times it was an installation mistake. But what
+something new and exciting, other times it was an installation mistake. But what
 happens when you design a door with a handle that is meant to be pushed?
-Whether it's volountary or not, you always get the same thing:
+Whether it's voluntary or not, you always get the same thing:
 people will try to use the door wrong all the time. People see a handle, they
 expect it's there to be pulled, then they pull on it, realise they used it
 wrong, and push.
@@ -87,7 +87,7 @@ u     // Unsigned integer
 ~~~
 
 One might like `s` for signed, personally I like `i` for integer. This
-is preferencial, you can choose whichever letters you like, as long as
+is my preference, you can choose whichever letters you like, as long as
 the overall design is consistent within itself.
 
 Second step, what size do I want this primitive to be? Depending if the language
@@ -114,7 +114,7 @@ f64m4x4    // m for matrix, so a matrix of dimension 4 by 4 of 64-bit floating p
 ~~~
 
 Originally, I made this type design for C, so because it didn't have tuples, I also
-added handy common math types that are handy to have, for example:
+added handy common math types that are nice to have, for example:
 
 ~~~
 f32sincos    // the result of a sincos function in 32-bit floating point (a struct of two f32, sin, and cos)
