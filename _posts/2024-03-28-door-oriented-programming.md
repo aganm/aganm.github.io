@@ -1,4 +1,15 @@
-Door Oriented Programming or: What Doors Can Teach Us About Software
+
+---
+layout: post
+title: Door Oriented Programming
+subtitle: or: What Doors Can Teach Us About Software
+gh-repo: aganm/aganm.github.io
+gh-badge: [star, fork, follow]
+tags: [test]
+comments: true
+author: Michael Aganier
+---
+
 
 
 # Doors
@@ -40,30 +51,38 @@ make you stop twice or even thrice about it.
 
 The usual mathy type names might look something along the lines of:
 
+~~~
 float       // A float
 Vector3     // A vector of 3 floats
 Rect4       // A rectangle of 4 floats
+~~~
 
 For integers:
 
+~~~
 int         // An integer
 Vector3i    // A vector of 4 integers
 Rect4i      // A rectangle of 4 integers
+~~~
 
 For common types, it may seem not so bad, but it gets worse as we introduce
 other types. For doubles, what do we do? Maybe add a d after the types:
 
+~~~
 double
 Vector3d
 Rect4d
+~~~
 
 What if I want integers, but 64-bits long? Now I need an explicit-size primitive,
 plus I need to encode the size of in the name of the other types as well to
 specify I want my math types of this size:
 
+~~~
 i64
 Vector3i64
 Rect4i64
+~~~
 
 There is no way to intuitively reason about how these names should be combined
 because they are almost arbitrary named. Some are of implicit size that we assume
@@ -76,9 +95,11 @@ incongruities once and for all. Here is the design I use:
 
 First step, do I want a floating point number, a signed integer, or an unsigned integer?
 
+~~~
 f     // Floating point
 i     // Signed integer
 u     // Unsigned integer
+~~~
 
 One might like 's' for signed, personally I like 'i' for integer. This
 is preferencial, you can choose whichever letters you like, as long as
@@ -87,9 +108,11 @@ the design is consistent within itself.
 Second step, what size do I want this primitive to be? Depending if the language
 supports it, this value could be almost anything starting from 8 in powers of 2.
 
+~~~
 f32   // 32-bit floating point
 i64   // signed 64-bit integer
 u128  // unsigned 128-bit integer
+~~~
 
 Fun fact: Zig will let you choose specific bit sizes for your types, like u29.
 
@@ -99,18 +122,23 @@ Or, if you continue, you can make complex math types.
 Third step: do I want a vector type, a rect type, a matrix type?
 And if I want a complex type, what dimension is this complex type of?
 
+~~~
 i64rect    // rect for rect, a rect (4 members, x,y,w,h) of 64-bit signed integer
 f32v3      // v for vector, so vector3 (3 members, x,y,z) of 32-bit floating point
 f64m4x4    // m for matrix, so a matrix of dimension 4 by 3 of 64-bit floating point
+~~~
 
 Originally, I made this type design for C, so because it didn't have tuples, I also
 added handy common math types that are handy to have, for example:
 
+~~~
 f32sincos    // the result of a sincos function in 32-bit floating point (a struct of two f32, sin, and cos)
+~~~
 
 Here is what a math type catalogue could look like in my design, and is in fact
 what I use:
 
+~~~
 f32                               // single value
 f32sincos                         // result of a sincos
 f32v2, f32v3, f32v4               // vectors
@@ -121,9 +149,11 @@ f32rect                           // rect
 f32quat                           // quaternion
 f32aabb2, f32aabb3, f32aabb4      // aabb bounding boxes
 f32ray2, f32ray3, f32ray4         // ray types (origin vector + direction vector)
+~~~
 
 Now combine the types above with all of these possible primitives:
 
+~~~
 f32     // 32-bit floating point
 f64     // 64-bit floating point
 f128    // 128-bit floating point
@@ -137,6 +167,7 @@ u16     // unsigned 16-bit integer
 u32     // unsigned 32-bit integer
 u64     // unsigned 64-bit integer
 u128    // unsigned 128-bit integer
+~~~
 
 Maybe I need some ultra high precision 4x3 matrix math for whatever reason: f128m4x3.
 A 4 element unsigned 8-bit per channel RGBA value: u8v4 (swizzled with rgba members).
@@ -151,9 +182,11 @@ simple structs that store a single primitive. Having these in type checked struc
 a long way stopping simple mistakes such as passing the wrong type of unit in the
 wrong place by accident:
 
+~~~
 f32seconds
 f32meters
 f32kilograms
+~~~
 
 With this design, one can come up with any math type right off the top of their
 head. All you have to do is follow this consistent rule:
@@ -182,7 +215,7 @@ The way I went about my SIMD type names is, I reused the exact same rules
 explained above, with one extra rule: for a SIMD type, put a 'm' in front of
 it, 'm' as in Many or Multiple (Single Instruction Multiple Data).
 
-[< m for SIMD >]< primitive >< size >[< complex type >[< dimension of complex type >]]
+    [< m for SIMD >]< primitive >< size >[< complex type >[< dimension of complex type >]]
 
 If I want multiple f32s, mf32.
 Multiple 64-bit signed integers? mi64.
