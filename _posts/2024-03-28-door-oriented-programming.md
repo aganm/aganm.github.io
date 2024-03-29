@@ -191,14 +191,15 @@ Which, in my design, translates to:
 
 This design is: consistent, predictable, intuitive, easy to use. If this was a
 door, it is the kind of door design that I can use right without having to stop
-to think about it.
+to think about it. And again, you don't have to use `f`, `u` and `i` to have a good design,
+as long as the choices you make in your design are consistent within itself.
 
 # SIMD
 
 SIMD can be complex, and there's more than one way to go about it.
 The way you go about it will change what makes sense as far as naming goes,
-but the point is SIMD type names can be just as intuitive with this design.
-The way I went about my SIMD type names is, I reused the exact same rules
+but SIMD type names can be just as intuitive with this design.
+The way I went about my SIMD type names is, I reused the exact same rule
 explained above, with one extra part: for a SIMD type, put a `m` in front of
 it, `m` as in Many or Multiple (Single Instruction Multiple Data).
 
