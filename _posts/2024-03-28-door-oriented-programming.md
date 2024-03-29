@@ -44,9 +44,9 @@ different kind of way. And when you use the first type, you expect something
 from the future types, but then you get surprised that it is not the case.
 And you stop to think twice over it.
 
-# A Solution
+# The Problem
 
-What I propose is a design for common type names that is intuitive and doesn't
+What I propose is a design for basic type names that is intuitive and doesn't
 make you stop twice or even thrice about it.
 
 The usual mathy type names might look something along the lines of:
@@ -65,7 +65,7 @@ Vector3i    // A vector of 4 integers
 Rect4i      // A rectangle of 4 integers
 ~~~
 
-For common types, it may seem not so bad, but it gets worse as we introduce
+For commonly used types, it may seem not so bad, but it gets worse as we introduce
 other types. For doubles, what do we do? Maybe add a d after the types:
 
 ~~~
@@ -74,9 +74,8 @@ Vector3d
 Rect4d
 ~~~
 
-What if I want integers, but 64-bits long? Now I need an explicit-size primitive,
-plus I need to encode the size of in the name of the other types as well to
-specify I want my math types of this size:
+What if I want integers, but 64-bits long? Maybe I'll use an explicit-size primitive,
+and that will reflect on other names as well:
 
 ~~~
 i64
@@ -91,7 +90,11 @@ some specify the primitive type and the size ( Vector3i64 ).
 
 Such a naming style is all over the place and impossible to predict, impossible
 to think intuitively about. The following solution will fix these
-incongruities once and for all. Here is the design I use:
+incongruities once and for all.
+
+# The Solution
+
+Here is the design I use:
 
 First step, do I want a floating point number, a signed integer, or an unsigned integer?
 
@@ -101,9 +104,9 @@ i     // Signed integer
 u     // Unsigned integer
 ~~~
 
-One might like 's' for signed, personally I like 'i' for integer. This
+One might like `s` for signed, personally I like 'i' for integer. This
 is preferencial, you can choose whichever letters you like, as long as
-the design is consistent within itself.
+the overall design is consistent within itself.
 
 Second step, what size do I want this primitive to be? Depending if the language
 supports it, this value could be almost anything starting from 8 in powers of 2.
@@ -171,7 +174,7 @@ u128    // unsigned 128-bit integer
 
 Maybe I need some ultra high precision 4x3 matrix math for whatever reason: f128m4x3.
 A 4 element unsigned 8-bit per channel RGBA value: u8v4 (swizzled with rgba members).
-Maybe I want a 2d position based on integers because it's a tilemap: i32v2 .
+Maybe I want a 2d position based on integers because it's a tilemap: i32v2.
 
 For 22 different kinds of types, and for 13 different kinds of primitives, that's 286 possible combinations.
 286 and I never have to stop thinking what I'm gonna type next for any type I
