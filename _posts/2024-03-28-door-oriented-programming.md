@@ -164,7 +164,7 @@ Maybe I need some ultra high precision 4x3 matrix math for whatever reason: `f12
 A 4 element unsigned 8-bit per channel RGBA value: `u8v4` (swizzled with rgba members).
 Maybe I want a 2d position based on integers because it's a tilemap: `i32v2`.
 
-For *22* different kinds of types, and for *13* different kinds of primitives, that's *286* possible combinations.
+For **22** different kinds of types, and for **13** different kinds of primitives, that's **286** possible combinations.
 286 and I never have to stop thinking what I'm gonna type next for any type I
 want. I never have to stop to think when opening that door.
 
@@ -221,18 +221,24 @@ there's no handle.
 
 
 ---
+    
+    
+    Rennnnnt!
+    
+    
+    ..
+    
+    
+    It's time to pay rent.
+    
+    
+    ..
+    
+    
+    You'll get your rent when you fix this damn door!
+    
+
+---
 
 
-Rennnnnt!
-
-
-..
-
-
-It's time to pay rent.
-
-
-..
-
-
-You'll get your rent when you fix this damn door!
+See? Even Spider-Man hates bad naming.
