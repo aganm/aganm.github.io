@@ -32,7 +32,7 @@ question I asked, yes, there is such a thing as objectively right and wrong
 design. When a design encourages people using a thing wrong, the design, is
 wrong.
 
-https://youtu.be/yY96hTb8WgI
+[![It's not you. Bad doors are everywhere.](https://99percentinvisible.org/app/uploads/2016/02/pulldoors.jpg)](https://youtu.be/yY96hTb8WgI "It's not you. Bad doors are everywhere.")
 
 # Type Names
 
@@ -85,8 +85,8 @@ Rect4i64
 
 There is no way to intuitively reason about how these names should be combined
 because they are almost arbitrary named. Some are of implicit size that we assume
-( float ), some are explicit sized ( i64 ), some omit the primitive type  ( Vector3 ),
-some specify the primitive type and the size ( Vector3i64 ).
+(`float`), some are explicit sized (`i64`), some omit the primitive type  (`Vector3`),
+some specify the primitive type and the size (`Vector3i64`).
 
 Such a naming style is all over the place and impossible to predict, impossible
 to think intuitively about. The following solution will fix these
@@ -104,7 +104,7 @@ i     // Signed integer
 u     // Unsigned integer
 ~~~
 
-One might like `s` for signed, personally I like 'i' for integer. This
+One might like `s` for signed, personally I like `i` for integer. This
 is preferencial, you can choose whichever letters you like, as long as
 the overall design is consistent within itself.
 
@@ -117,7 +117,7 @@ i64   // signed 64-bit integer
 u128  // unsigned 128-bit integer
 ~~~
 
-Fun fact: Zig will let you choose specific bit sizes for your types, like u29.
+Fun fact: Zig will let you choose specific bit sizes for your types, like `u29`.
 
 From here, you can choose to end it, and you have a primitive.
 Or, if you continue, you can make complex math types.
@@ -172,11 +172,11 @@ u64     // unsigned 64-bit integer
 u128    // unsigned 128-bit integer
 ~~~
 
-Maybe I need some ultra high precision 4x3 matrix math for whatever reason: f128m4x3.
-A 4 element unsigned 8-bit per channel RGBA value: u8v4 (swizzled with rgba members).
-Maybe I want a 2d position based on integers because it's a tilemap: i32v2.
+Maybe I need some ultra high precision 4x3 matrix math for whatever reason: `f128m4x3`.
+A 4 element unsigned 8-bit per channel RGBA value: `u8v4` (swizzled with rgba members).
+Maybe I want a 2d position based on integers because it's a tilemap: `i32v2`.
 
-For 22 different kinds of types, and for 13 different kinds of primitives, that's 286 possible combinations.
+For *22* different kinds of types, and for *13* different kinds of primitives, that's *286* possible combinations.
 286 and I never have to stop thinking what I'm gonna type next for any type I
 want. I never have to stop to think when opening that door.
 
@@ -198,12 +198,12 @@ head. All you have to do is follow this consistent rule:
  
 Which, in my design, translates to:
 
-1. Choose a primitive letter: 'f', 'u', 'i'
-2. Choose a size in bits: 8, 16, 32, 64, 128
-3. Optional: if you want a complex type, choose a complex type: 'v' for vector, 'm' for matrix, 'sincos', etc.
+1. Choose a primitive letter: `f`, `u`, `i`
+2. Choose a size in bits: `8`, `16`, `32`, `64`, `128`
+3. Optional: if you want a complex type, choose a complex type: `v` for vector, `m` for matrix, `sincos`, etc.
 4. Optional: if the complex type requires a dimension, then choose the dimension of the type.
-             a 'v' for vector requires a dimension, a 'm' for matrix requires a dimension,
-             but not a 'sincos', the dimension of the sincos is embedded into it, it's always 2 values.
+             a `v` for vector requires a dimension, a `m` for matrix requires a dimension,
+             but not a `sincos`, the dimension of the `sincos` is embedded into it, it's always 2 values.
 
 This design is: consistent, predictable, intuitive, easy to use. If this was a
 door, it is the kind of door design that I can use right without having to stop
@@ -220,16 +220,18 @@ it, 'm' as in Many or Multiple (Single Instruction Multiple Data).
 
     [< m for SIMD >]< primitive >< size >[< complex type >[< dimension of complex type >]]
 
-If I want multiple f32s, mf32.
-Multiple 64-bit signed integers? mi64.
-Multiple sincos values in double precision? mf64sincos.
-Multiple vector 4s of f32s? mf32v4.
-Multiple 30x39 matrixes of 96-bit floats? mf96m30x39.
+If I want multiple f32s, `mf32`.
+Multiple 64-bit signed integers? `mi64`.
+Multiple sincos values in double precision? `mf64sincos`.
+Multiple vector 4s of f32s? `mf32v4`.
+Multiple 30x39 matrixes of 96-bit floats? `mf96m30x39`.
 
-Okay, I don't have a mf96m30x39 type, but you get the point.
+Okay, I don't have a `mf96m30x39` type, but you get the point.
 I don't ever have to think twice how a type is named, it's always the same simple
 rule. The door always pulls when there's a handle, and it always pushes when
 there's no handle.
+
+
 
 
 
