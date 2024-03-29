@@ -9,7 +9,7 @@ comments: true
 author: Michael Aganier
 ---
 
-Is there such a thing as objectively right and wrong design?
+Is there such a thing as objectively right or wrong design?
 
 # Doors
 
@@ -99,13 +99,13 @@ the overall design is consistent within itself.
 Second step, what size do I want this primitive to be? Depending if the language
 supports it, this value could be almost anything starting from 8 in powers of 2.
 
-~~~c
+~~~
 f32   // 32-bit floating point
 i64   // signed 64-bit integer
 u128  // unsigned 128-bit integer
 ~~~
 
-    Fun fact: Zig will let you choose specific bit sizes for your types, like `u29`.
+Fun fact: Zig will let you choose specific bit sizes for your types, like `u29`.
 
 From here, you can choose to end it, and you have a primitive.
 Or, if you continue, you can make complex math types.
@@ -220,7 +220,7 @@ rule. The door always pulls when there's a handle, and it always pushes when
 there's no handle.
 
 
-
+---
 
 
 ..
