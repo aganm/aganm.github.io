@@ -241,4 +241,4 @@ there's no handle.
 ---
 
 
-See? Even Spider-Man hates bad naming.
+See? Even Spider-Man agrees with me.
