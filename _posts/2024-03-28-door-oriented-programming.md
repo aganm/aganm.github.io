@@ -209,8 +209,8 @@ Multiple 30x39 matrixes of 96-bit floats? `mf96m30x39`.
 
 Okay, I don't have a `mf96m30x39` type, but you get the point.
 I don't ever have to think twice how a type is named, it's always the same simple
-rule. The door always pulls when there's a handle, and it always pushes when
-there's no handle.
+rule. The door always pulls when there is a handle, and it always pushes when
+there isn't.
 
 
 ---
