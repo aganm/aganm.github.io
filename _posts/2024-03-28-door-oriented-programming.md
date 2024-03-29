@@ -35,8 +35,7 @@ over opening this door. Now when it comes to type names in programming, I see
 this a lot: one type is named in a certain way, and then another type in a
 different kind of way. And when I use the first type, I expect something
 from the future types, but then I get surprised that it is not the case.
-And I stop to think twice over it. It adds unnecessary friction to my
-programming flow.
+And I stop to think twice over it. It adds unnecessary friction.
 
 What I propose is a design for basic type names that is intuitive and doesn't
 make you stop twice or even thrice about it. The usual mathy type names might
