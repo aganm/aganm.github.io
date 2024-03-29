@@ -6,7 +6,6 @@ gh-repo: aganm/aganm.github.io
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
-author: Michael Aganier
 ---
 
 Let me ask you this: is there such a thing as objectively right or wrong design?
