@@ -7,7 +7,7 @@ thumbnail-img: https://99percentinvisible.org/app/uploads/2016/02/pulldoors.jpg
 share-img: https://99percentinvisible.org/app/uploads/2016/02/pulldoors.jpg
 gh-repo: aganm/aganm.github.io
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [design, software, naming]
 comments: true
 ---
 
