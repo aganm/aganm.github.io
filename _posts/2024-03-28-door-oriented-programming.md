@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Door Oriented Programming
@@ -10,11 +9,9 @@ comments: true
 author: Michael Aganier
 ---
 
-
+Is there such a thing as objectively right and wrong design?
 
 # Doors
-
-Is there such a thing as objectively right and wrong design?
 
 I remember watching a video about the design of doors. I love doors. The video
 was about different kinds of designs of doors and how they affect people's
