@@ -18,7 +18,7 @@ expectations. When you see a handle, you expect that you're expected to pull
 on that handle.  When you see no handle, you expect that you're expected to
 push on it. And the world keeps turning. But not every door is designed like
 that.  What happens when it's the opposite? Sometimes they just wanted to try
-something new and excitingexiting, other times it was an installation mistake. But what
+something new and exciting, other times it was an installation mistake. But what
 happens when you design a door with a handle that is meant to be pushed?
 Whether it's voluntary or not, you always get the same thing:
 people will try to use the door wrong all the time. People see a handle, they
