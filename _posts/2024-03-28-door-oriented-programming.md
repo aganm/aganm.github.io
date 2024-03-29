@@ -110,7 +110,7 @@ And if I want a complex type, what dimension is this complex type of?
 ~~~
 i64rect    // rect for rect, a rect (4 members, x,y,w,h) of 64-bit signed integer
 f32v3      // v for vector, so vector3 (3 members, x,y,z) of 32-bit floating point
-f64m4x4    // m for matrix, so a matrix of dimension 4 by 3 of 64-bit floating point
+f64m4x4    // m for matrix, so a matrix of dimension 4 by 4 of 64-bit floating point
 ~~~
 
 Originally, I made this type design for C, so because it didn't have tuples, I also
