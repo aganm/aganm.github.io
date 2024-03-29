@@ -196,7 +196,7 @@ SIMD can be complex, and there's more than one way to go about it.
 The way you go about it will change what makes sense as far as naming goes,
 but the point is SIMD type names can be just as intuitive with this design.
 The way I went about my SIMD type names is, I reused the exact same rules
-explained above, with one extra rule: for a SIMD type, put a 'm' in front of
+explained above, with one extra part: for a SIMD type, put a 'm' in front of
 it, 'm' as in Many or Multiple (Single Instruction Multiple Data).
 
     [< m for SIMD >]< primitive >< size >[< complex type >[< dimension of complex type >]]
