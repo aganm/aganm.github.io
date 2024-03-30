@@ -131,7 +131,7 @@ f32m3x2, f32m3x3, f32m3x4         // matrixes that start with a dimension of 3
 f32m4x2, f32m4x3, f32m4x4         // matrixes that start with a dimension of 4
 f32rect                           // rect
 f32quat                           // quaternion
-f32aabb2, f32aabb3, f32aabb4      // aabb bounding boxes
+f32aabb2, f32aabb3, f32aabb4      // axis-aligned bounding boxes
 f32ray2, f32ray3, f32ray4         // ray types (origin vector + direction vector)
 ~~~
 
