@@ -27,7 +27,7 @@ wrong, and push.
 
 [![It's not you. Bad doors are everywhere.](https://99percentinvisible.org/app/uploads/2016/02/pulldoors.jpg)](https://youtu.be/yY96hTb8WgI "It's not you. Bad doors are everywhere.")
 
-# The Problem
+# The Problem with Type Names
 
 When a door is designed right, you don't even think about it, you just use it
 because the design was intuitive and it didn't need you to stop to think twice
@@ -72,7 +72,7 @@ size (`Vector3i64`).
 Such a naming style is all over the place and impossible to think intuitively
 about. The following solution will fix these incongruities once and for all.
 
-# The Solution
+# A Solution
 
 What I propose is a design for basic type names that is intuitive and doesn't
 make you stop twice or even thrice about it. Here is the design I use:
